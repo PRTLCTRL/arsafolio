@@ -1,17 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import BlogList from './blog/BlogList';
-import BlogPost from './blog/BlogPost';
-import './blog/Blog.css';
+---
+title: First Thoughts on Building in Public
+date: 2025-01-16
+slug: first-thoughts
+excerpt: Reflections on starting a new journey of writing and sharing ideas openly.
+---
 
-// Sample posts data
-const posts = [
-  {
-    slug: 'first-thoughts',
-    title: 'First Thoughts on Building in Public',
-    date: '2025-01-16',
-    excerpt: 'Reflections on starting a new journey of writing and sharing ideas openly.',
-    content: `# First Thoughts on Building in Public
+# First Thoughts on Building in Public
 
 There's something both terrifying and liberating about putting your thoughts out into the world. For the longest time, I kept my ideas locked away in private notebooks, convinced they needed to be perfect before anyone could see them.
 
@@ -50,62 +44,4 @@ Let's see where this goes.
 
 ---
 
-*More posts coming soon. Stay curious.*`
-  },
-  {
-    slug: 'example-post',
-    title: 'How to Add Blog Posts',
-    date: '2025-01-16',
-    excerpt: 'Learn how easy it is to add new blog posts to this site.',
-    content: `# How to Add Blog Posts
-
-Adding new blog posts to this site is simple! Just edit the posts array in App.js.
-
-## Post Structure
-
-Each post needs:
-- **title**: The post title
-- **date**: Publication date
-- **slug**: URL-friendly identifier
-- **excerpt**: Short description
-- **content**: Full markdown content
-
-## Markdown Support
-
-You can use **bold**, *italic*, and [links](https://example.com).
-
-### Code Blocks
-
-\`\`\`javascript
-function hello() {
-  console.log("Hello, world!");
-}
-\`\`\`
-
-That's it! Your post will appear on the homepage automatically.`
-  },
-  {
-    slug: 'welcome',
-    title: 'Welcome to My Blog',
-    date: '2025-01-15',
-    excerpt: 'Welcome! This is where I share my thoughts and ideas.',
-    content: `# Welcome to My Blog
-
-This is my first blog post. I'll be sharing my thoughts, ideas, and stories here.
-
-Stay tuned for more content!`
-  }
-];
-
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<BlogList posts={posts} />} />
-        <Route path="/post/:slug" element={<BlogPost posts={posts} />} />
-      </Routes>
-    </Router>
-  );
-}
-
-export default App;
+*More posts coming soon. Stay curious.*
